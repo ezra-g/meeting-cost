@@ -1,0 +1,125 @@
+body {
+	text-align: center;
+	font-family: helvetica;
+	font-size: 2em;
+	max-width: 800px;
+	margin: auto;
+}
+
+h3 {
+	margin-bottom: .3em;
+	font-size: 1em;
+}
+
+label {
+	display: block;
+}
+
+button {
+	font-size: .8em;
+	clear: both;
+	display: block;
+	text-align: center;
+	margin: auto;
+	width: 40%;
+	height: 2em;
+}
+
+input[type="number"] {
+	margin-top: .2em;
+	text-align: center;
+	width: 3em;
+	font-size: .8em;
+}
+
+input[type="number"]:disabled {
+	width: 10em;
+}
+
+div.summary {
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+#inputs {
+	font-size: .8em;
+}
+
+#salary {
+	width: 8em;
+}
+
+#main {
+	margin: auto;
+	width: 90%;
+}
+
+.shareContainer {
+	display: inline;	
+	margin: auto;
+}
+
+.shareContainer span {
+	font-size: .5em;
+}
+
+
+#shareEstimate {
+	cursor: pointer; 
+	margin: 1em auto .5em auto;
+	display: block;
+	clear: both;
+}
+
+.radio-label {
+	display: inline;
+	clear: right;
+}
+
+div.input-wrapper {
+	padding-top: .5em;
+}
+
+div.frequency-radios {
+	margin: 0 auto;
+    text-align: left;
+    display: table;
+    padding-bottom: 1em;
+    padding-top: .5em;
+}
+
+#customize-estimate {
+	margin-top: .5em;
+	font-size: .8em;
+}
+
+.costs {
+	font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+
+#faq {
+	margin: auto;
+}
+
+.question {
+	font-size: .4em;
+	margin: .5em;
+	display: block;
+	clear: both;
+	cursor: pointer; 
+	font-weight: bold;
+}
+
+.answer {
+	font-size: .4em;
+	
+}
+
+#footer {
+	margin-top: 5em;
+	font-size: .3em;
+}

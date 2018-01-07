@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1561195-10"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-1561195-10');
+	</script>
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/URI.js"></script>
+	<script src="./js/jquery-numerator.js"></script>
+	<script src="./js/meeting-cost.js"></script>
+	<link href='./css/style.css' rel='stylesheet' type='text/css'>
+	<title>Meeting Cost Calculator: See what this meeting costs</title>
+	<meta property="og:title"              content="Meeting Cost Calculator" />
+	<meta property="og:description"        content="See what this meeting costs" />
+</head>
+<body>
+	<div id="main">
+		<div class="summary">
+			This meeting costs
+			<div class="costs">
+				<span id="costInMoneyLabel"></span>$<span id="costInMoney"></span>
+				<br/>
+				<span id="costInHoursLabel">and <span id="costInHours"></span> hours in opportunity cost</span> <span id="perUnitLabel"></span>
+			</div>
+		</div>
+		<div id="inputs">
+			<div class="input-wrapper-first">
+				<label for="people">Number of People</label>
+				<input type="number" id="people"/>
+			</div>
+			<div class="input-wrapper">
+				<label for="length">Meeting Length (Hours) </label>
+				<input type="number" id="length"/>
+			</div>
+			<div class="input-wrapper">
+				<label>Meeting Frequency</label>
+				<div class ="frequency-radios">
+					<input type="radio" name="frequency" id="once" value="once"><label class="radio-label" for="once">Once</label><br>
+					<input type="radio" name="frequency" id="monthly" value="monthly"><label class="radio-label" for="monthly">Monthly</label><br>
+					<input type="radio" name="frequency" id="weekly" value="weekly"><label class="radio-label" for="weekly">Weekly</label><br>
+					<input type="radio" name="frequency" id="daily" value="daily"><label class="radio-label" for="daily">Daily</label><br>
+				</div>
+			</div>
+			<button class="shareEstimateTitle expand-next">Share this Estimate</button>
+			<div class="shareContainer hidden">
+				<textarea id="shareEstimate" value="" cols=25 rows=4 readonly="readonly"></textarea>
+			</div>
+		</br>
+		<button type="button" class="customize-estimate-link expand-next">Customize the Estimate</button>
+		<div id="customize-estimate" class="hidden">
+			<label>Days of paid time off (vacation and sick days)</label>
+			<input type="number" id="daysPTO"/>
+			<label>Number of holidays</label>
+			<input type="number" id="daysHoliday"/>
+			<label>Average Salary</label>
+			<input type="number" step="5000" id="salary"/>
+			<label>Number of working days</label>
+			<input type="number" id="daysWork" disabled/><br>
+			<label>Fully loaded cost (Salary + Office + Benefits: 20% markup)</label>
+			<input type="number" id="fullyLoadedCost" disabled/><br>
+			<label>Hourly cost</label>
+			<input type="number" id="hourlyCost" disabled/><br>
+		</div>
+	</div>
+</div>
+<div id="faq">
+	<h3>FAQ</h3>
+	<span class="question expand-next">How does the estimate work?</span>
+	<span class="answer hidden">
+		We calculate the average hourly cost of each attendee and multiply it by the number of attendees and the duration of the meeting. You can help make the estimate more accurate by <a class="customize-estimate-link" href="">customizing it</a>.
+	</span>
+	<span class="question expand-next">Are you saying that all meetings are bad?</span>
+	<span class="answer hidden">
+		Not at all. Meetings are often essential. However, the benefits of a particular meeting are usually more clear than the costs of having 
+		that meeting. The goal of the Meeting Cost Calculator is to help us better evaluate which meetings are worth having.
+	</span>
+	<span class="question expand-next">What is opportunity cost?</span>
+	<span class="answer hidden">
+		Opportunity cost is "the loss of potential gain from other alternatives when one alternative is chosen." The cost of any meeting is both the direct cost of employing each person <i>plus</i> the cost of the value they could have produced instead of attending the meeting.
+	</span>
+	<span class="question expand-next">This site isn't aesthetically pleasing.</span>
+	<span class="answer hidden">
+		That's not a question, but you're correct. You're welcome to <a href="https://github.com/ezra-g/meeting-cost">submit a pull request</a> to improve the site.
+	</span>
+</div>
+<div id="footer">By <a href="https://twitter.com/ezrabg">Ezra Gildesgame</a></div>
+</body>
+</html>		
