@@ -76,11 +76,11 @@ function calculateAndShowCost() {
 	$("#fullyLoadedCost").val(fullyLoadedCost());
 	$("#daysWork").val(numberOfWorkDays());
 
-	$( "#costInMoney" ).numerator({'toValue': costInMoney, 'delimiter': ',', 'rounding': 2});
+	$( "#costInMoney" ).numerator({'toValue': costInMoney, 'delimiter': ','});
 	$( "#costInHours" ).numerator({'toValue': costInHours, 'delimiter': ','});
 	$( "#perUnitLabel" ).text(perUnitLabel());
 
-	shareEstimateText = "This meeting costs $" + costInMoney + " and " + costInHours + " hours in opportunity cost. " + window.location.href;
+	shareEstimateText = "This meeting costs $" + Math.round(costInMoney) + " and " + costInHours + " hours in opportunity cost. " + window.location.href;
 	$( "#shareEstimate ").val(shareEstimateText);
 }
 
