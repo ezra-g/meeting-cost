@@ -80,7 +80,7 @@ function calculateAndShowCost() {
 	$( "#costInHours" ).numerator({'toValue': costInHours, 'delimiter': ','});
 	$( "#perUnitLabel" ).text(perUnitLabel());
 
-	shareEstimateText = "This meeting costs $" + Math.round(costInMoney) + " and " + costInHours + " hours in opportunity cost. " + window.location.href;
+	shareEstimateText = "This meeting costs $" + Math.round(costInMoney).toLocaleString('en') + " and " + costInHours + " hours in opportunity cost. " + window.location.href;
 	$( "#shareEstimate ").val(shareEstimateText);
 }
 
