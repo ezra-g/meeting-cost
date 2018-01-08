@@ -10,7 +10,7 @@ $( document ).ready(function() {
    	this.select();
    });
    $(".expand-next").click(function() {
-   	$(this).next().slideToggle("fast");
+   	$(this).next().fadeToggle("fast");
    	return false;
    });
 });
