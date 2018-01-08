@@ -1,4 +1,4 @@
-# meeting-cost
-Meeting Cost Calculator
+# Meeting Cost Calculator
+Online at [meetingco.st](http://meetingco.st/).
 
-A website to help decide which meetings are worth having.
+A webpage to help decide which meetings are worth having.
