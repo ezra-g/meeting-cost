@@ -125,12 +125,3 @@ function hourlyCost() {
 	var hourlyCost = fullyLoadedCost() / (numberOfWorkHours());
 	return hourlyCost.toFixed(2);
 }
-
-/*
-TODO:
-- format plural 
-- Support different currency
-- Pretty but restrictive number formatting
-- Steppers
-- Share button
-*/
