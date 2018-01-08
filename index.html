@@ -29,21 +29,23 @@
 			</div>
 		</div>
 		<div id="inputs">
-			<div class="input-wrapper-first">
-				<label for="people">Number of People</label>
-				<input type="number" id="people"/>
-			</div>
-			<div class="input-wrapper">
-				<label for="length">Meeting Length (Hours) </label>
-				<input type="number" id="length"/>
-			</div>
-			<div class="input-wrapper">
-				<label>Meeting Frequency</label>
-				<div class ="frequency-radios">
-					<input type="radio" name="frequency" id="once" value="once"><label class="radio-label" for="once">Once</label><br>
-					<input type="radio" name="frequency" id="monthly" value="monthly"><label class="radio-label" for="monthly">Monthly</label><br>
-					<input type="radio" name="frequency" id="weekly" value="weekly"><label class="radio-label" for="weekly">Weekly</label><br>
-					<input type="radio" name="frequency" id="daily" value="daily"><label class="radio-label" for="daily">Daily</label><br>
+			<div class="sentence">
+				<div class="input-wrapper-first">
+					<input type="number" id="people"/>
+					<label for="people">people</label>
+				</div>
+				<div class="input-wrapper">
+					<label for="length"> meeting for </label>
+					<input type="number" id="length"/>
+					hours
+				</div>
+				<div class="input-wrapper">
+				<select>
+				  <option value="once">once</option>
+				  <option value="monthly">monthly</option>
+				  <option value="weekly">weekly</option>
+				  <option value="daily">daily</option>
+				</select>
 				</div>
 			</div>
 			<button class="shareEstimateTitle expand-next">Share this Estimate</button>

@@ -12,7 +12,7 @@ h3 {
 }
 
 label {
-	display: block;
+	
 }
 
 button {
@@ -30,6 +30,14 @@ input[type="number"] {
 	text-align: center;
 	width: 3em;
 	font-size: .8em;
+	background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+
+label {
+	display: inline;
+	clear: both;
 }
 
 input[type="number"]:disabled {
@@ -41,8 +49,14 @@ div.summary {
 	margin-bottom: 1em;
 }
 
-#inputs {
+.sentence div {
 	font-size: .8em;
+	display: inline;
+
+}
+
+div.sentence {
+	margin-bottom: 1em;
 }
 
 #salary {
@@ -74,10 +88,6 @@ div.summary {
 .radio-label {
 	display: inline;
 	clear: right;
-}
-
-div.input-wrapper {
-	padding-top: .5em;
 }
 
 div.frequency-radios {
