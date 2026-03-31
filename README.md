@@ -1,4 +1,4 @@
 # Meeting Cost Calculator
-Online at [meetingco.st](http://meetingco.st/).
+No longer online. Someone bought the previous domain when it expired!
 
 A webpage to help decide which meetings are worth having.
