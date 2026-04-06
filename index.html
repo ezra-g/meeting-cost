@@ -31,11 +31,11 @@
 		<div id="inputs">
 			<div class="input-wrapper-first">
 				<label for="people">Number of People</label>
-				<input type="number" id="people"/>
+				<input type="number" min="0" id="people"/>
 			</div>
 			<div class="input-wrapper">
 				<label for="length">Meeting Length (Hours) </label>
-				<input type="number" id="length"/>
+				<input type="number" min="0" id="length"/>
 			</div>
 			<div class="input-wrapper">
 				<label>Meeting Frequency</label>
@@ -55,11 +55,11 @@
 		<button type="button" class="customize-estimate-link expand-next">Customize the Estimate</button>
 		<div id="customize-estimate" class="hidden">
 			<label>Days of paid time off (vacation and sick days)</label>
-			<input type="number" id="daysPTO"/>
+			<input type="number" min="0" id="daysPTO"/>
 			<label>Number of holidays</label>
-			<input type="number" id="daysHoliday"/>
+			<input type="number" min="0" id="daysHoliday"/>
 			<label>Average Salary</label>
-			<input type="number" step="5000" id="salary"/>
+			<input type="number" min="0" step="5000" id="salary"/>
 			<label>Number of working days</label>
 			<input type="number" id="daysWork" disabled/><br>
 			<label>Fully loaded cost (Salary + Office + Benefits: 20% markup)</label>
